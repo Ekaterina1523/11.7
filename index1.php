@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: lightgray;
+        }
+        table.center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2><center>Гибкое сравнение в PHP</center></h2>
+    <table class="center">
+        <tr>
+            <th></th>
+            <th>true</th>
+            <th>false</th>
+            <th>1</th>
+            <th>0</th>
+            <th>-1</th>
+            <th>"1"</th>
+            <th>null</th>
+            <th>"php"</th>
+        </tr>
+        <tr>
+            <th>true</th>
+            <td>true</td>
+            <td>false</td>
+            <td>true</td>
+            <td>false</td>
+            <td>true</td>
+            <td>true</td>
+            <td>false</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <th>false</th>
+            <td>false</td>
+            <td>true</td>
+            <td>false</td>
+            <td>true</td>
+            <td>false</td>
+            <td>false</td>
+            <td>true</td>
+            <td>false</td>
+        </tr>
+        <tr>
+            <th>1</th>
+            <td>true</td>
+            <td>false</td>
+            <td>true</td>
+            <td>false</td>
+            <td>false</td>
+            <td>true</td>
+            <td>false</td>
+            <td>false</td>
+        </tr>
+        <tr>
+            <th>0</th>
+            <td>false</td>
+            <td>true</td>
+            <td>false</td>
+            <td>true</td>
+            <td>false</td>
+            <td>false</td>
+            <td>true</td>
+            <td>false</td>
+        </tr>
+        <tr>
+            <th>-1</th>
+            <td>true</td>
+            <td>false</td>
+            <td>false</td>
+            <td>false</td>
+            <td>true</td>
+            <td>false</td>
+            <td>false</td>
+            <td>false</td>
+        </tr>
+        <tr>
+            <th>"1"</th>
+            <td>true</td>
+            <td>false</td>
+            <td>true</td>
+            <td>false</td>
+            <td>false</td>
+            <td>true</td>
+            <td>false</td>
+            <td>false</td>
+        </tr>
+        <tr>
+            <th>null</th>
+            <td>false</td>
+            <td>true</td>
+            <td>false</td>
+            <td>true</td>
+            <td>false</td>
+            <td>false</td>
+            <td>true</td>
+            <td>false</td>
+        </tr>
+        <tr>
+            <th>"php"</th>
+            <td>true</td>
+            <td>false</td>
+            <td>false</td>
+            <td>false</td>
+            <td>false</td>
+            <td>false</td>
+            <td>false</td>
+            <td>true</td>
+        </tr>
+    </table>
+    <table>
+        <h2><center>Жёсткое сравнение в PHP</center></h2>
+        <table class="center">
+            <tr>
+                <th></th>
+                <th>true</th>
+                <th>false</th>
+                <th>1</th>
+                <th>0</th>
+                <th>-1</th>
+                <th>"1"</th>
+                <th>null</th>
+                <th>"php"</th>
+            </tr>
+            <tr>
+                <th>true</th>
+                <td>true</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <th>false</th>
+                <td>false</td>
+                <td>true</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>false</td>
+                <td>false</td>
+                <td>true</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <th>0</th>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>true</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <th>-1</th>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>true</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <th>"1"</th>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>true</td>
+                <td>false</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <th>null</th>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>true</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <th>"php"</th>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>true</td>
+            </tr>
+    </table>
+</body>
+</html>
